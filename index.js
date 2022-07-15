@@ -20,7 +20,7 @@ function waitForElm(selector) {
 
 window.addEventListener("load", function (){
     waitForElm("#shorts-player > div.html5-video-container > video").then((elm) => {
-        videoPlayer = document.querySelector("#shorts-player > div.html5-video-container > video")
+        let videoPlayer = document.querySelector("#shorts-player > div.html5-video-container > video")
         let nextButton = document.querySelector("#navigation-button-down > ytd-button-renderer > a")
     
         videoPlayer.addEventListener("play", (event) => {
